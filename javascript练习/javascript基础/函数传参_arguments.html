@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>arguments求和</title>
+    <script>
+    function show()
+    {
+        var result=0;
+        //arguments可以当作数组处理
+        for(var i=0;i<arguments.length;i++)
+        {
+            result+=arguments[i];
+        }
+        return result;
+    }
+    alert(show(1,2,3,3,32,34));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

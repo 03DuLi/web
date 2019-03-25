@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#flip").click(function() {
+            $("#panel").slideToggle("slow");
+        });
+    });
+    </script>
+    <style>
+    #flip,#panel{
+        padding: 5px;
+        text-align: center;
+        background-color: #aaa;
+        border:1px solid #ff7402;
+    }
+    #panel{
+        display: none;
+        padding: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div id="flip">点我滑动面板</div>
+    <div id="panel">hello world!</div>
+</body>
+</html>

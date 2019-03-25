@@ -1,0 +1,283 @@
+/* 去除浏览器自带的边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+/* 设置页面字体大小以及类型 */
+body{
+    font: normal 100% Helvetica,Arial,sans-serif;
+}
+/* 设置主容器大小 */
+.contain{
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+}
+/* 顶部区域样式 */
+.header{
+    width: 100%;
+    height: 46px;
+    background-color: #000;
+}
+/* 内容区域 */
+.content{
+    width: 1200px;
+    height: 680px;
+    margin: 0 auto;
+    clear: both;
+}
+/* 内容区域左侧 */
+.content-left{
+    width: 18%;
+    height: 620px;
+    margin-top: 30px;
+    background-color: #F5F5F5;
+    float: left;
+}
+.content-left-top{
+    width: 100%;
+    height: 320px;
+    padding-top: 20px;
+    text-align: center;
+}
+.content-left-top-img{
+    text-align: center;
+    padding: 20px;
+}
+.content-left-top-img img{
+    border:3px solid rgb(191, 191, 191);
+    border-radius: 50%;
+}
+.content-left-top p span{
+    padding: 16px;
+}
+.content-left-top p span a:hover{
+    text-decoration: none;
+}
+.content-left-top-account{
+    width: 80%;
+    text-align: left;
+    height: auto;
+    margin:0 auto;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+/* 账户管理 */
+.content-left-bottom{
+    width: 100%;
+    height: 300px;
+}
+.menu li a:link,.menu li a:visited{
+    display: block;
+    padding-left: 30px;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    color:#000;
+    position: relative;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color:#0B66C1;
+    /* background-color: rgb(255, 255, 255); */
+    text-decoration: none;
+}
+.icon-right{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: grey;
+}
+/* 内容区域右侧 */
+.content-right{
+    width: 80%;
+    margin-top: 30px;
+    height: 600px;
+    float: right;
+}
+/* 账号绑定区域 */
+.content-right-item{
+    width: 98%;
+    margin-left: 2%;
+    height: 600px;
+    display: none;
+
+}
+.content-right-item h4{
+    border-bottom:1px solid #BBBBBB;
+    padding: 10px 0px 20px 0px;
+    position: relative;
+}
+.itemBox{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border-bottom:1px solid #BBBBBB;
+}
+.itemBox-left{
+    float: left;
+    width: 60px;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+}
+.itemBox-center{
+    width: 500px;
+    height: 100px;
+    padding: 20px;
+}
+.itemBox-right{
+    position: absolute;
+    right: 25px;
+    top:25px;
+}
+.itemBox-right a{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    border:1px solid #0B66C1;
+}
+.itemBox-right a:hover{
+    text-decoration: none;
+}
+/* 个人信息区域 */
+.userInfo{
+    width: 90%;
+    height: 400px;
+    margin:0 auto;
+}
+.userInfo-box1{
+    width: 10%;
+    height: 60px;
+    text-align: center;
+    margin-top: 16px;
+    line-height: 60px;
+    background-color: rgb(231, 231, 231);
+    float: left;
+}
+.userInfo-box2{
+    width: 90%;
+    padding-left: 20px;
+    margin-top: 16px;
+    height: 60px;
+    float: right;
+    line-height: 60px;
+    border-bottom: 1px solid #BBBBBB;
+}
+/* 操作记录区域 */
+.action{
+    color:rgb(72, 72, 72);
+    font-size: 13px;
+    padding-left: 20px;;
+}
+.float-right{
+    position: absolute;
+    top: 15px;
+    font-size: 13px;
+    right: 20px;
+}
+.float-right a:hover{
+    text-decoration: none;
+}
+.operation-record{
+    width: 100%;
+    height: 550px;
+}
+.table tr td,th{
+    padding-top: 20px;
+    height: 50px;
+    line-height: 60px;
+}
+/* 分页部分 */
+.pagination-center{
+    margin:0 auto;
+    width: 30%;
+    height: auto;
+}
+/* 实名认证部分 */
+.certification1{
+    width: 100%;
+    margin-top: 30px;
+    height: 100px;
+    background-color: rgb(231, 231, 231);
+    padding: 25px 0;
+}
+.certification-box1{
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(15, 187, 49);
+    line-height: 50px;
+}
+.certification-box1 a{
+    color: #fff;
+}
+.certification-box1 a:hover{
+    text-decoration: none;
+    color:#fff;
+}
+.certification2{
+    width: 100%;
+    height: 250px;
+}
+.certification2 ol{
+    line-height: 25px;
+    color: grey;
+    padding: 15px;
+}
+.certification2 ol li{
+    list-style: decimal;
+}
+.certification2 p{
+    padding-top: 20px;
+    color: grey;
+    font-size: 18px;
+}
+/* 学籍认证部分 */
+.student-certification-left{
+    width: 50%;
+    height: 400px;
+    margin-top: 30px;
+    float: left;
+}
+.student-certification-left p{
+    text-align: center;
+    color:rgb(251, 138, 32);
+}
+.col-sm-4{
+    position: relative;
+}
+.col-sm-4 span{
+    position: absolute;
+    top: 5px;
+    right: -140px;
+}
+.col-sm-4 a{
+    font-size: 12px;
+}
+.student-certification-right{
+    width: 50%;
+    height: 400px;
+    float: right;
+}
+.student-certification-right h5{
+    margin-left: 20px;
+}
+.student-certification-right ul{
+    margin: 20px 40px 40px 40px;
+}
+.student-certification-right li{
+    list-style: disc;
+    font-size: 13px;
+    padding: 8px;
+}
+/* 收件地址部分 */
+.active{
+    background-color: #fff;
+}

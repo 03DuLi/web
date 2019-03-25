@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("div").remove();
+        });
+        $("#btn2").click(function () {
+            $("div").empty();
+        });
+        $("#btn3").click(function () {
+            $("p").remove(".aaa");
+        });
+    });
+    </script>
+</head>
+<body>
+    <div style="width:180px;height:100px;background-color:red;">
+        <p>这是div中的一些文字1。</p>
+        <p class="aaa">这是div中的一些文字2。</p>
+        <p class="aaa">这是div中的一些文字3。</p>
+    </div>
+    <button id="btn1">移除div元素</button>
+    <button id="btn2">清空div元素</button>
+    <button id="btn3">移除所有class="aaa"的p元素</button>
+</body>
+</html>

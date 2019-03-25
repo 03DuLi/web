@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(function () {
+        $("#addText").click(function () {
+            $("p").append("<b>追加文本。</b>");
+        });
+        $("#addList").click(function () {
+            $("ol").append("<li>追加列表项</li>");
+        });
+        $("#addText2").click(function () {
+            $("p").prepend("<b>追加文本。</b>");
+        });
+        $("#addList2").click(function () {
+            $("ol").prepend("<li>追加列表项</li>");
+        });
+    });
+    function appendText(){
+        var txt1="<p>文本。</p>";
+        var txt2=$("<p></p>").text("文本。");
+        var txt3=document.createElement("p");;
+        txt3.innerHTML="文本。";
+        $("body").append(txt1,txt2,txt3);
+    }
+    </script>
+</head>
+<body>
+    <p>这是一个段落。</p>
+    <p>这是另一个段落。</p>
+    <ol>
+        <li>list item1</li>
+        <li>list item2</li>
+        <li>list item3</li>
+    </ol>
+    <button id="addText">添加文本1</button>
+    <button id="addList">添加列表项1</button>
+    <button id="addText2">添加文本2</button>
+    <button id="addList2">添加列表项2</button>
+    <button onclick="appendText()">追加文本</button>
+</body>
+</html>

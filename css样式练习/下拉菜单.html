@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下拉菜单</title>
+    <style>
+    #menu{
+        padding:0px;
+        margin:0px;
+    }
+    #menu>li{
+        float:left;
+        width:150px;
+    }
+    #menu li,#menu ul{
+        padding:0px;
+        margin:0px;
+        list-style:none;
+    }
+    #menu ul{
+        display:none;
+        position:absolute;
+        width:150px;
+    }
+    #menu>li>a{
+        background-color:aquamarine;
+        display:block;
+        text-align:center;
+        padding:8px 20px;
+    }
+    #menu li a{
+        text-decoration:none;
+    }
+    #menu li ul li a{
+        padding:5px;
+        display:block;
+        text-align:center;
+        background-color: chartreuse;
+    }
+    #menu>li>a:hover{
+        background-color:aqua;
+    }
+    #menu li li a:hover{
+        background-color:blueviolet;
+    }
+    #menu>li:hover ul{
+        display:block;
+    }
+    </style>
+</head>
+<body>
+<div id='nav'>
+<ul id='menu'>
+    <li>
+        <a href="">下拉菜单1</a>
+        <ul>
+            <li><a href="">菜单1</a></li>
+            <li><a href="">菜单2</a></li>
+            <li><a href="">菜单3</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="">下拉菜单2</a>
+        <ul>
+            <li><a href="">菜单1</a></li>
+            <li><a href="">菜单2</a></li>
+            <li><a href="">菜单3</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+</body>
+</html>

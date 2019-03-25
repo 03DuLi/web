@@ -1,0 +1,170 @@
+/* 手机端css样式 */
+/* 去除浏览器自带的边距 */
+/* 使用百分比设置宽度 */
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+/* 设置页面字体大小以及类型 */
+body{
+    font: normal 100% Helvetica,Arial,sans-serif;
+}
+/* 设置主容器大小 */
+.container{
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+}
+.header{
+    width: 100%;
+    height: auto;
+}
+.header-top{
+    width: 100%;
+    height: 1.5em;
+    text-align: right;
+}
+/* 登录链接 */
+.login-link{
+    margin-right: 1em;
+}
+.header a:link,.header a:visited{
+    color: #B99585;
+    text-decoration: none;
+}
+.header a:hover{
+    color: red;
+}
+/* logo容器样式设置 */
+.header-bottom-left{
+    width: 100%;
+    height: auto;
+}
+/* 图片css样式 */
+.img-responsive{
+    width: 70%;
+    height: auto;
+}
+/* 搜索框 */
+.header-bottom-right-item{
+    width: 100%;
+    height: 2.5em;
+    overflow: hidden;
+    margin-top: 0.75em;
+}
+.header-bottom-right-item>div{
+    float: left;
+    height: 100%;
+}
+.search-input{
+    width: 85%;
+}
+.serach-button{
+    width: 15%;
+    text-align: left;
+}
+input,button{
+    outline: none;
+    border: 0;
+}
+input{
+    width: 80%;
+    border: 2px solid #B99585;
+    height: 2.70em;
+    float: right;
+}
+button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #B99585;
+    background-color: #B99585;
+    color: white;
+    letter-spacing: 0.5em;
+}
+/* 内容部分样式 */
+.content{
+    width:100%;
+    height: auto;
+    background-color: #F8F8F8;
+    padding-top: 1em;
+    color:#3C3C3C;
+}
+.content-container{
+    width: 96%;
+    height: auto;
+    margin-left: 2%;
+}
+.content-container-left{
+    width: 100%;
+    height: auto;
+}
+/* 内容区域头部 */
+.content-container-left-top{
+    width: 100%;
+    height: 1.5em;
+}
+.content-container-left-top>div{
+    float: left;
+}
+/* 内容区域头部占位 */
+.content-container-left-top-tmp{
+    width: 2%;
+    height: 1.5em;
+    margin-right: 2%;
+    background-color: #B99585;
+}
+.content-container-left-top-title{
+    width: 96%;
+    height: 1.5em;
+}
+/* 内容区域底部 */
+.content-container-left-bottom{
+    width: 100%;
+    height: auto;
+    margin-top: 0.75em;
+}
+.company-profile-text{
+    margin-bottom: 1em;
+}
+/* 页尾 */
+.footer{
+    width: 100%;
+    height: auto;
+    margin-top: 1.5em;
+    background-color: #666666;
+    color: #FEFEFE;
+}
+.footer-content{
+    width: 100%;
+    height: auto;
+}
+/* 页尾头部 */
+.footer-content-top{
+    width: 100%;
+    height: 2em;
+}
+.footer-content-top>div{
+    float: left;
+    line-height: 1.5em;
+}
+.footer-content-bottom{
+    width: 100%;
+    height: 1.5em;
+    text-align: center;
+}
+.footer-content-top-left{
+    width: 50%;
+    height: 1.5em;
+    border-right: 2px solid #FEFEFE;;
+    text-align: center;
+    margin-top: 0.25em;
+}
+.footer-content-top-right{
+    width: 45%;
+    height: 1.5em;
+    text-align: center;
+    margin-top: 0.25em;
+}

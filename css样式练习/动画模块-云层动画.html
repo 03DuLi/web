@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    ul{
+        height: 400px;
+        margin-top: 200px;
+        background-color: rgb(78, 191, 219);
+        animation: change 5s linear 0s infinite alternate;
+        position: relative;
+        /* 隐藏超过浏览器的部分显示滚动条 */
+        overflow: hidden;
+    }
+    @keyframes change{
+        from{
+            background-color: rgb(78, 191, 219);
+        }
+        to{
+            background-color: rgb(14, 14, 14);
+        }
+    }
+    ul li{
+        list-style: none;
+        width: 400%;
+        height: 100%;
+        /* background-color: rgb(110, 32, 32); */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    ul li:nth-child(1){
+        background-image: url(./images/yun3.png);
+        animation: one 30s linear 0s infinite alternate;
+    }
+    ul li:nth-child(2){
+        background-image: url(./images/yun.png);
+        animation: two 30s linear 0s infinite alternate;
+    }
+    ul li:nth-child(3){
+        background-image: url(./images/yun2.png);
+        animation: three 30s linear 0s infinite alternate;
+    }
+    /* 注意点：想让云的运动速度不一样，时间一样，改变运动的距离即可；保证运动过程中一直有云，让li的宽度变成倍数关系；默认情况增加宽度是往右边增加的，改变运动方向往左运动 */
+    @keyframes one{
+        from{
+            margin-left: 0;
+        }
+        to{
+            margin-left: -100%;
+        }
+    }
+    @keyframes two{
+        from{
+            margin-left: 0;
+        }
+        to{
+            margin-left: -200%;
+        }
+    }
+    @keyframes three{
+        from{
+            margin-left: 0;
+        }
+        to{
+            margin-left: -300%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

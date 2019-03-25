@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("#div1").load("demo_text.txt",function (responseTxt,statusTXT,xhr) {
+            if(statusTXT=="success"){
+                alert("外部内容加载成功！");
+            }
+            if(statusTXT=="error"){
+                alert("Error:"+xhr.status+":"+xhr.statusText);
+            }
+            });
+        }); 
+    });
+    </script>
+</head>
+<body>
+    <div id="div1"><h2>使用jQuery AJAX修改文本内容</h2></div>
+    <button>获取外部内容</button>
+</body>
+</html>

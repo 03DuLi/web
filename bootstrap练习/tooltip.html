@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../文件/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="../文件/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h4>提示工具(Tooltip)插件 - 锚</h4>
+    这是一个<a href="#" class="tooltip-test" data-toggle="tooltip" title="默认的Tooltip">默认的Tooltip</a>
+    这是一个<a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="left" title="左侧的Tooltip">左侧的Tooltip</a>
+    这是一个<a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="top" title="顶部的Tooltip">顶部的Tooltip</a>
+    这是一个<a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="bottom" title="底部的Tooltip">底部的Tooltip</a>
+    这是一个<a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="right" title="右侧的Tooltip">右侧的Tooltip</a>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" title="默认的Tooltip">默认的Tooltip</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left"  title="左侧的Tooltip">左侧的Tooltip</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top"  title="顶部的Tooltip">顶部的Tooltip</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom"  title="底部的Tooltip">底部的Tooltip</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right"  title="右侧的Tooltip">左右侧的Tooltip</button>
+    <!-- 提示工具（Tooltip）插件需要使用jquery激活它 -->
+    <script>
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+    </script>
+</body>
+</html>

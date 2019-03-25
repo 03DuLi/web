@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简易年历</title>
+    <style>
+    #tab .active{
+        background: rgb(255, 255, 255);
+        color:rgb(245, 46, 46);
+    }
+    h2,p{
+        margin:0px;
+        padding:0px;
+    }
+    .calendar{
+        margin:0px auto;
+        padding:0px;
+        background:rgb(214, 214, 214);
+        text-align:center;
+        width:330px;
+        height:540px;
+    }
+    .calendar ul{
+        margin:0 auto;
+    }
+    .calendar ul,li{
+        list-style: none;
+        margin:0px;
+        padding:0px;
+    }
+    .calendar ul li{
+        display:block;
+        width:70px;
+        height:70px;
+        background-color:rgb(0, 0, 0);
+        color:white;
+        float:left;
+        padding:10px;
+        margin:10px;
+    }
+    .text{
+        clear:both;
+        padding:10px;
+    }
+    </style>
+    <script>
+    window.onload=function ()
+    {
+        var arr=['一月健步如飞','二月飞奔吧','三月妇女节',
+        '四月吃苹果','五月美美美','六月儿童节','七月假期就来了',
+        '八月建党节','九月去上学','十月国庆节讴歌','十一月气温降低',
+        '十二月结束了'];
+        var oDiv=document.getElementById('tab');
+        var aLi=oDiv.getElementsByTagName('li');
+        var oTxt=oDiv.getElementsByTagName('div')[0];//获取的是一组数组，而本例只获取第一个div所以要标明取出第一个元素
+        for(var i=0;i<aLi.length;i++)
+        {
+            aLi[i].index=i;  //下标索引值
+            aLi[i].onmouseover=function ()//鼠标移入实验ommouseover函数
+            {
+                for(var i=0;i<aLi.length;i++)
+                {
+                    aLi[i].className='';
+                }
+                this.className='active';
+                oTxt.innerHTML='<h2>'+(this.index+1)+'月活动</h2><p>'+arr[this.index]+'</p>';   // (this.index+1)字符串拼接
+            };
+        }
+    };
+    </script>
+</head>
+<body>
+<div id='tab' class='calendar'>
+    <ul>
+        <li class='active'><h2>1</h2><p>JAN</p></li>
+        <li><h2>2</h2><p>FER</p></li>
+        <li><h2>3</h2><p>MAR</p></li>
+        <li><h2>4</h2><p>APR</p></li>
+        <li><h2>5</h2><p>MAY</p></li>
+        <li><h2>6</h2><p>JUN</p></li>
+        <li><h2>7</h2><p>JUL</p></li>
+        <li><h2>8</h2><p>AUG</p></li>
+        <li><h2>9</h2><p>SEP</p></li>
+        <li><h2>10</h2><p>OCT</p></li>
+        <li><h2>11</h2><p>NOV</p></li>
+        <li><h2>12</h2><p>DEC</p></li>
+    </ul>
+    <div class='text'>
+        <h2>1月活动</h2>
+        <p>放鞭炮庆祝过年了</p>
+    </div>
+</div>
+</body>
+</html>

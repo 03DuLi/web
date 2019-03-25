@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title> 
+    <!-- pdf引入库文件 -->
+    <script src="../pdfObject/pdfobject.min.js"></script>
+    <style>
+        /* 使用CSS来更改包含元素的外观 */
+        .pdfobject-container {
+        height: 30rem;
+        border: 1rem solid rgba(0,0,0,.1);
+        background-color: rgb(204, 53, 53);
+        border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- pdf的使用 -->
+    <div style="width:800px;height:500px;" id="test">
+    </div>
+    <script>
+        // 单击目录打开不同的PDF文件，使用字符串拼接
+        var options = {
+        page: "2"
+        };
+        PDFObject.embed("../text/xuexi.pdf", "#test", options);
+    </script>
+    
+    
+
+</body>
+</html>

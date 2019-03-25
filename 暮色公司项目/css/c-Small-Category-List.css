@@ -1,0 +1,277 @@
+/* 电脑端css样式 */
+/* 去除浏览器自带的边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+/* 设置页面字体大小以及类型 */
+body{
+    font: normal 100% Helvetica,Arial,sans-serif;
+}
+html{
+    font-size: 16px;
+}
+/* 设置主容器大小 */
+.container{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+}
+/* 顶部区域样式 */
+.header{
+    width: 100%;
+    height: 6em;
+    background-color: white;
+}
+.header-top{
+    width: 100%;
+    height: 2em;
+    text-align: right;
+    line-height: 2em;
+    color: rgb(194,194,194);
+}
+.header-bottom{
+    width: 100%;
+    height: 4em;
+}
+/* 登录链接 */
+.login-link{
+    margin-right: 1em;
+}
+.header a:link,.header a:visited{
+    color: rgb(185, 149, 133);
+    text-decoration: none;
+}
+.header a:hover{
+    color: red;
+}
+/* logo/搜索框区域 */
+.header-bottom>div{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+/* logo样式 */
+.header-bottom-left{
+    width: 100%;
+    height: 4em;
+}
+/* 搜索框样式 */
+.header-bottom-right{
+    width: 100%;
+    text-align: right;
+}
+/* 响应式图片 */
+.img-responsive{
+    width:auto;
+    height: 3em;
+    margin-top: 0.5em;
+}
+.header-bottom-right-item{
+    width: 100%;
+    height: 2.5em;
+    overflow: hidden;
+    margin-top: 0.75em;
+}
+.header-bottom-right-item>div{
+    float: left;
+    height: 100%;
+}
+.search-input{
+    width: 85%;
+}
+.serach-button{
+    width: 15%;
+    text-align: left;
+}
+input,button{
+    outline: none;
+    border: 0;
+}
+input{
+    width: 50%;
+    border: 2px solid #B99585;
+    height: 2.70em;
+}
+button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #B99585;
+    background-color: #B99585;
+    color: white;
+    letter-spacing: 0.5em;
+}
+/* 内容区 */
+.content{
+    width: 100%;
+    height: auto;
+    background-color: #F8F8F8;
+}
+/* 底部 */
+.footer{
+    width: 100%;
+    height: 4em;
+    background-color: #666666;
+    padding: 1em 0 1em 0;
+}
+.footer-container{
+    width: 1200px;
+    height: 4em;
+    margin:0 auto;
+    color: #FEFEFE;
+}
+.footer-text1{
+    padding-right: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.footer-text2{
+    padding-left: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.footer-copyright{
+    line-height: 1em;
+    font-size: 0.8em;
+    line-height: 2em;
+}
+/* 内容区编写 */
+.content-container{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+    padding: 2.0em 0;
+}
+h1.h1-item1{
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+    padding-left: 15px;
+    border-left: 0.8em solid #B99585;
+}
+.bb-p{
+    background-color: #ffffff;
+    padding: 1.5em 1em;
+    margin-top: 1em;
+    line-height: 2em;
+}
+.bb-p a{
+    text-decoration: none;
+    color: #2C2C2C;
+    margin-left: 1em;
+}
+.container-p1{
+    margin-top: 2em;
+    background-color: #ffffff;
+    padding: 1em;
+    border-bottom: 1px solid lightgray;
+}
+.container-p1 a{
+    text-decoration: none;
+    color:#313131;
+}
+.container-p2{
+    background-color: #ffffff;
+    padding: 2em 1em;
+}
+.container-p2 a{
+    text-decoration: none;
+    color:#313131;
+}
+.container-p3{
+    padding: 0 1em 1em 3em;
+    background-color: #ffffff;
+    position: relative;
+}
+.letter-left{
+    display: block;
+    width: 2.5em;
+    color: #fff;
+    float: left;
+    height: 3em;
+}
+.circle{
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #6B473A;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 1em;
+}
+.container-p3 a{
+    text-decoration: none;
+    color:#4e4e4e;
+    margin-right: 2em;
+    line-height: 2em;
+}
+.section1{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    margin-top: 2em;
+    overflow: hidden;
+}
+.section1-section{
+    float: left;
+    width: 32%;
+    height: auto;
+    margin-bottom: 1.5em;
+}
+.section1-section-special{
+    margin-right: 2%;
+}
+h1.h1-item2,h1.h1-item3{
+    padding: 1em 0.5em;
+    font-size: 1.1em;
+}
+h2{
+    padding: 0em 0.5em 0.5em 0.5em;
+    font-size: 1.0em;
+}
+.processing{
+    padding-left: 0.5em;
+}
+.processing a{
+    text-decoration: none;
+    color:#4e4e4e;
+}
+.address{
+    padding-left: 0.5em;
+}
+.section2{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    margin-top: 2em;
+    overflow: hidden;
+}
+.section2-section{
+    float: left;
+    width: 35%;
+    height: auto;
+    padding-bottom: 1em;
+}
+.section2-section-p{
+    padding-left: 0.5em;
+}
+.section2-article{
+    width: 65%;
+    height: auto;
+    float: left;
+}
+.section2-article-p{
+    text-align: right;
+    padding: 1em 3em 1em 1em;
+}
+.section2-article-p a{
+    text-decoration: none;
+    color:#a04f4f;
+}

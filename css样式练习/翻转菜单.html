@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .nav{
+        width: 340px;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 100px;
+        background-color: rgb(253, 124, 124);
+    }
+    .nav>li{
+        list-style: none;
+        width: 100px;
+        height:50px;
+        line-height: 50px;
+        /* display: block; */
+        float: left;
+        text-align: center;
+        background: rgb(189, 247, 255);
+        margin-left: 10px;
+        position: relative;
+
+    }
+    .sub{
+        width: 100px;
+        position: absolute;
+        /* 设置绝对定位时默认情况下都要设置left,top属性，否则不同浏览器会出现不同的效果 */
+        left: 0;
+        top: 50px;
+    }
+    .sub li{
+        list-style: none;
+        background-color: rgb(255, 0, 119);
+        transform: rotateY(180deg);
+        transition: all 1s;
+        /* 设置元素透明（隐藏） */
+        opacity: 0;  
+    }
+    .nav>li:hover .sub li{
+        transform: none;
+        /* li元素淡入淡出 */
+        opacity: 1;
+    }
+    .nav>li:hover .sub li:nth-child(1){
+        transition-delay: 0ms;
+    }
+    .nav>li:hover .sub li:nth-child(2){
+        transition-delay: 200ms;
+    }
+    .nav>li:hover .sub li:nth-child(3){
+        transition-delay: 400ms;
+    }
+    .nav>li:hover .sub li:nth-child(4){
+        transition-delay: 600ms;
+    }
+    .nav>li:hover .sub li:nth-child(5){
+        transition-delay: 800ms;
+    }
+    /* 默认状态 */
+    .nav>li .sub li:nth-child(5){
+        transition-delay: 0ms;
+    }
+    .nav>li .sub li:nth-child(4){
+        transition-delay: 200ms;
+    }
+    .nav>li .sub li:nth-child(3){
+        transition-delay: 400ms;
+    }
+    .nav>li .sub li:nth-child(2){
+        transition-delay: 600ms;
+    }
+    .nav>li .sub li:nth-child(1){
+        transition-delay: 800ms;
+    }
+    div{
+        width: 340px;
+        height: 340px;
+        margin: 0 auto;
+        background-color: rgb(255, 110, 110);
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+<body> 
+    <ul class="nav">
+        <li>一级菜单
+            <ul class="sub">
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+            </ul>
+        </li>
+        <li>一级菜单
+            <ul class="sub">
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                </ul>
+        </li>
+        <li>一级菜单
+            <ul class="sub">
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                </ul>
+        </li>
+    </ul> 
+    <!-- 后设置的div文字盖住了菜单，可以给菜单设置定位（定位的元素会盖住没有定位的元素） -->
+    <div>我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容我是文字内容</div> 
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <style>
+    .blue{
+        color:blue;
+    }
+    .size{
+        font-size: 25px;
+    }
+    </style>
+    <script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("h1,h2,p").addClass("blue");
+            $(".text").addClass("size");
+        });
+        $("#btn2").click(function () {
+            $("p").css({"background-color":"yellow","font-size":"30px"});
+        });
+    });
+    </script>
+</head>
+<body>
+    <h1>标题1</h1>
+    <h2>标题2</h2>
+    <p style="background-color:red;">这是一个段落。</p>
+    <p>这是另一个段落。</p>
+    <p class="text">这是一些重要的文本！</p>
+    <button id="btn1">为元素添加class</button>
+    <button id="btn2">返回第一个p元素的background-color</button>
+</body>
+</html>

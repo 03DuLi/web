@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>innerHTML应用</title>
+    <style>
+    #div1{
+        width:200px;
+        height:200px;
+        border:1px solid rgb(19, 19, 5);
+    }
+    </style>
+    <script>
+    window.onload=function ()
+    {
+        var text=document.getElementById('txt1');
+        var oDiv=document.getElementById('div1');
+        var oBtn=document.getElementById('btn');
+        oBtn.onclick=function ()
+        {
+            oDiv.innerHTML=text.value;
+            //alert(oDiv.innerHTML);
+        };
+    };
+    </script>
+</head>
+<body>
+    <input id='txt1' type='text' />
+    <input id='btn' type='button' value='设置'/>
+    <div id='div1'>adaf</div>
+</body>
+</html>

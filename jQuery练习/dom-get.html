@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(function () {
+        $("#showText").click(function () {
+            alert("Text:"+$("#wen").text());
+        });
+        $("#showHtml").click(function () {
+            alert("Html:"+$("#wen").html());
+        });
+        $("#showValue").click(function () {
+            alert("值为:"+$("#shu").val());
+        });
+        $("#showHref").click(function () {
+            alert("href属性的值为："+$("a").attr("href"));
+        });
+    });
+    </script>
+</head>
+<body>
+    <p id="wen">这是段落中的<b>粗体</b>文本。</p>
+    <button id="showText">显示文本</button>
+    <button id="showHtml">显示html</button>
+    <p>名称：<input id="shu" type="text" value="菜鸟教程"></p>
+    <button id="showValue">显示值</button>
+    <br>
+    <a href="http://www.baidu.com">百度一下</a>
+    <button id="showHref">显示href属性的值</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript创建JSON对象</h2>
+    <p>
+        网站名称：<span id="jname"></span><br>
+        网站地址：<span id="jurl"></span><br>
+        网站slogan：<span id="jslogan"></span><br>
+    </p>
+    <p>你可以使用(.)来访问JSON对象的值：</p>
+    <p id="demo"></p>
+    <script>
+    var JSONObject ={
+        "name":"菜鸟",
+        "url":"www.baidu.com",
+        "slogan":"学好快"
+    };
+    document.getElementById("jname").innerHTML=JSONObject.name;
+    document.getElementById("jurl").innerHTML=JSONObject.url;
+    document.getElementById("jslogan").innerHTML=JSONObject.slogan;
+    var myObj,x;
+    myObj = {
+        "name":"runoob","a;exa":10000,"site":null
+    }
+    x=myObj.name;
+    document.getElementById("demo").innerHTML=x;
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* 电脑端css样式 */
+/* 去除浏览器自带的边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+/* 设置页面字体大小以及类型 */
+body{
+    font: normal 100% Helvetica,Arial,sans-serif;
+}
+html{
+    font-size: 16px;
+}
+/* 设置主容器大小 */
+.container{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+}
+/* 顶部区域样式 */
+.header{
+    width: 100%;
+    height: 6em;
+    background-color: white;
+}
+.header-top{
+    width: 100%;
+    height: 2em;
+    text-align: right;
+    line-height: 2em;
+    color: rgb(194,194,194);
+}
+.header-bottom{
+    width: 100%;
+    height: 4em;
+}
+/* 登录链接 */
+.login-link{
+    margin-right: 1em;
+}
+.header a:link,.header a:visited{
+    color: rgb(185, 149, 133);
+    text-decoration: none;
+}
+.header a:hover{
+    color: red;
+}
+/* logo/搜索框区域 */
+.header-bottom>div{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+/* logo样式 */
+.header-bottom-left{
+    width: 100%;
+    height: 4em;
+}
+/* 搜索框样式 */
+.header-bottom-right{
+    width: 100%;
+    text-align: right;
+}
+/* 响应式图片 */
+.img-responsive{
+    width:auto;
+    height: 3em;
+    margin-top: 0.5em;
+}
+.header-bottom-right-item{
+    width: 100%;
+    height: 2.5em;
+    overflow: hidden;
+    margin-top: 0.75em;
+}
+.header-bottom-right-item>div{
+    float: left;
+    height: 100%;
+}
+/* 内容区 */
+.content{
+    width: 100%;
+    height: auto;
+    background-color: #6B4634;
+}
+/* 底部 */
+.footer{
+    width: 100%;
+    height: 4em;
+    background-color: #ffffff;
+    padding: 1em 0 1em 0;
+}
+.footer-container{
+    width: 1200px;
+    height: 4em;
+    margin:0 auto;
+    color: #6B4634;
+}
+.footer-text1{
+    padding-right: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.footer-text2{
+    padding-left: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.footer-copyright{
+    line-height: 1em;
+    font-size: 0.8em;
+    line-height: 2em;
+}
+/* 内容区编写 */
+.content-container{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+    padding: 2.0em 0;
+}
+h1{
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+    padding-left: 15px;
+    border-left: 0.8em solid #B99585;
+}
+section{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+ul{
+    margin-top: 1em;
+}
+ul>li{
+    float: left;
+    width: 48%;
+    height: auto;
+    position: relative;
+}
+ul>li:first-child{
+    margin-right: 4%;
+}
+button{
+    position: absolute;
+    bottom: 6em;
+    left: 13%;
+    width: 74%;
+    height: 4em;
+    background-color: #734E3C;
+    outline: none;
+    border: 1px solid #734E3C;
+    color: #ffffff;
+    font-weight: bold;
+}

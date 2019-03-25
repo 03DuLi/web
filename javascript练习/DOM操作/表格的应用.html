@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    window.onload=function ()
+    {
+        var oTab=document.getElementById("tab1");
+        // 获取表格中的杜丽的复杂方法
+        // alert(oTab.getElementsByTagName("tbody")[0].getElementsByTagName("tr")[0].getElementsByTagName("td")[1].innerHTML);
+        // 简单方法
+        alert(oTab.tBodies[0].rows[0].cells[1].innerHTML);
+    };
+    </script>
+</head>
+<body>
+    <table id="tab1" border="1" width="300px">
+        <thead>
+            <td>ID</td>
+            <td>姓名</td>
+            <td>年龄</td>
+        </thead>
+        <!-- 不写tbody的话，浏览器会自动加上tbody，所以，一般情况下还是写上tbody -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>杜丽</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>杜琴</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>杜勇</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>杜汶轩</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

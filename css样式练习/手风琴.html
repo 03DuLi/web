@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    ul{
+        width: 658px;
+        height: 241px;
+        /* background-color: rgb(241, 179, 179); */
+        margin: 100px auto;
+         overflow: hidden;/*隐藏子元素多余的部分 */
+    }
+    ul li{
+        list-style: none;
+        width:109px;
+        float: left;
+        border: 1px solid rgb(255, 89, 89);
+        box-sizing: border-box;
+        transition: width .5s;
+    }
+    //给li元素设置了变化，就在li里面写过渡
+    ul:hover li{
+        width:50px;
+    }
+    ul li:hover{
+        width:408px;
+    }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="./images/4.jpg" alt=""></li>
+    <li><img src="./images/4.jpg" alt=""></li>
+    <li><img src="./images/4.jpg" alt=""></li>
+    <li><img src="./images/4.jpg" alt=""></li>
+    <li><img src="./images/4.jpg" alt=""></li>
+    <li><img src="./images/4.jpg" alt=""></li>
+</ul>
+</body>
+</html>

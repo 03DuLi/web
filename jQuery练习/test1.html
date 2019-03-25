@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $("#hide").click(function () {
+            $(".test").hide("fast");
+        });
+        $("#show").click(function () {
+            $(".test").show("slow","swing",function() {
+                alert("show()方法已完成");
+            });
+        });
+    });
+    </script>
+</head>
+<body>
+    <p class="test">如果你点击隐藏按钮，我就会消失</p>
+    <button id="hide">隐藏</button>
+    <button id="show">显示</button>
+</body>
+</html>

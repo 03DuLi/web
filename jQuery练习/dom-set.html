@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(function () {
+        $("#setText").click(function () {
+            $("#this").text("Hello world!");
+        });
+        $("#setHtml").click(function () {
+            $("#that").html("<b>Hello world!</b>");
+        });
+        $("#setValue").click(function () {
+            $("input").val("RUNOOB");
+        });
+
+        $("#showText").click(function () {
+            $("#test1").text(function (i,origText) {
+                return("旧文本："+origText+"新文本：hello world!(index"+i+")");
+            });
+        });
+        $("#showHtml").click(function () {
+            $("#test2").html(function (i,origHtml) {
+                return("旧html："+origHtml+"新html:hello <b>world!</b>(index"+i+")");
+            });
+        });
+
+        $("#modifyHref").click(function () {
+            $(".href").attr("href","http://www.runoob.com");
+        });
+        $("#modify").click(function () {
+            $(".hrefTitle").attr({
+                "href":"http://www.runoob.com/jquery",
+                "title":"jQuery教程"
+            });
+        });
+    });
+    </script>
+</head>
+<body>
+    <!-- 设置内容 - text()、html() 以及 val() -->
+    <p id="this">这是一个段落。</p>
+    <p id="that">这是另一个段落。</p>
+    <p>输入框:<input type="text" value="菜鸟教程"></p>
+    <button id="setText">设置文本</button>
+    <button id="setHtml">设置HTML</button>
+    <button id="setValue">设置值</button>
+    <!-- text()、html() 以及 val() 的回调函数 -->
+    <p id="test1">这是一个有<b>粗体</b>字的段落。</p>
+    <p id="test2">这是另外一个有<b>粗体</b>字的段落。</p>
+    <button id="showText">显示新/旧文本</button>
+    <button id="showHtml">显示新/旧HTML</button>
+    <!-- 设置属性 - attr() -->
+    <br>
+    <br>
+    <a class="href" href="http://www.baidu.com">百度</a><br>
+    <button id="modifyHref">修改href值</button>
+    <p>点击按钮修改后，可以点击链接查看链接地址是否变化。</p>
+    <!-- attr() 方法也允许您同时设置多个属性，如设置 href 和 title  -->
+    <a class="hrefTitle" href="http://www.baidu.com">百度</a><br>
+    <button id="modify">修改href和title值</button>
+    <p>点击按钮修改后，可以点击链接查看href和title是否变化。</p>
+</body>
+</html>

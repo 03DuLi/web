@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    img{
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+    }
+    </style>
+    <script>
+        // 空位补0
+    function toDou(n)
+    {
+        if(n<10)
+        {
+            return '0'+n;
+        }
+        else
+        {
+            // 注意写上空字符串，返回的是字符串
+            return ''+n;
+        }
+    }
+    window.onload=function()
+    {
+        var oImg=document.getElementsByTagName("img");
+        function tick()
+        {
+        var oDate=new Date();
+        // 字符串连接
+        var str=toDou(oDate.getHours())+toDou(oDate.getMinutes())+toDou(oDate.getSeconds());
+        for(var i=0;i<oImg.length;i++)
+        {
+            // charAt（可以取字符串的某一位）解决IE7下的兼容问题。str[i]IE7不兼容
+            oImg[i].src="images/"+str.charAt(i)+".png";
+        }
+        }
+        // setInterval(fun,1000)会延迟1s执行
+        setInterval(tick,1000);
+        // 阻止1s的延迟
+        tick();
+    };
+    </script>
+</head>
+<body>
+    <img src="images/0.png" alt="">
+    <img src="images/0.png" alt="">
+    :
+    <img src="images/0.png" alt="">
+    <img src="images/0.png" alt="">
+    :
+    <img src="images/0.png" alt="">
+    <img src="images/0.png" alt="">
+</body>
+</html>

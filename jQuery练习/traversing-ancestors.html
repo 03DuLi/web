@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(function () {
+        $("span").siblings().css({"color":"red"});
+    });
+    </script>
+</head>
+<body>
+    <div style="width:150px;height: 100px;background-color:blue;">div曾祖父元素
+        <ul>ul祖父元素
+            <li>li父元素
+                <span style="display:block;">span</span>
+                <h2>ssda</h2>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

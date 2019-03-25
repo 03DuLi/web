@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    window.onload=function ()
+    {
+        // var oUl=document.getElementById("div1");
+        var aA=document.getElementsByTagName("a");
+        for(var i=0;i<aA.length;i++)
+        {
+            aA[i].onclick=function ()
+            {
+                // 隐藏a的父节点
+                this.parentNode.style.display="none";
+            };
+        }
+    };
+    </script>
+</head>
+<body>
+    <ul id="div1">
+        <!-- 空的a会刷新页面 -->
+        <li>sfggggggggggggggg<a href="">隐藏</a></li>
+        <li>sgrew<a href="javascript:;">隐藏</a></li>
+        <li>whhr<a href="javascript:;">隐藏</a></li>
+    </ul>
+</body>
+</html>

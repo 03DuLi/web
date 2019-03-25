@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>计算2个文本框之和</title>
+    <script>
+    window.onload=function ()
+    {
+        var oTxt1=document.getElementById('txt1');
+        var oTxt2=document.getElementById('txt2');
+        var oBtn=document.getElementById('div1');
+        oBtn.onclick=function ()
+        {
+            var a=parseInt(oTxt1.value);  //如果不知道使用parseInt()还是parseFloat(),可以直接使用parseFloat
+            var b=parseInt(oTxt2.value);
+            // alert(a+b);
+            if(isNaN(a))
+            {
+                alert('第一个输入框有误');
+            }
+            else if(isNaN(b))
+            {
+                alert('第二个输入框有误');
+            }
+            else{
+                alert(a+b);
+            }
+        };
+    };
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="txt1">
+    <input type="text" name="" id="txt2">
+    <input type="button" value="求和" id="div1">
+</body>
+</html>

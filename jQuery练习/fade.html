@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("#div0").fadeTo("slow",.3);
+            $("#div1").fadeTo("slow",.7);
+            $("#div2").fadeTo(1000);
+        });
+    });
+    </script>
+</head>
+<body>
+    <p>以下实例演示了fadeIn()使用了不同参数的效果。</p>
+    <button>点击淡出div元素</button>
+    <div id="div0" style="background-color:red;width:80px;height:80px;"></div>
+    <div id="div1" style="background-color:green;width:80px;height:80px;"></div>
+    <div id="div2" style="background-color:blue;width:80px;height:80px;"></div>
+</body>
+</html>

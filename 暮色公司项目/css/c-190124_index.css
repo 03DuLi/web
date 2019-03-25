@@ -1,0 +1,469 @@
+/* 电脑端css样式 */
+/* 去除浏览器自带的边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+/* 设置页面字体大小以及类型 */
+body{
+    font: normal 100% Helvetica,Arial,sans-serif;
+}
+html{
+    font-size: 16px;
+}
+/* 头部 */
+.header{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+/* 登录/注册 */
+.header-top{
+    width: 100%;
+    height: 2em;
+    text-align: right;
+    line-height: 2em;
+}
+/* 登录链接 */
+.login-link{
+    margin-right: 1em;
+}
+.header a:link,.header a:visited{
+    color: rgb(185, 149, 133);
+    text-decoration: none;
+}
+.header a:hover{
+    color: red;
+}
+/* logo */
+.header-middle{
+    width: 100%;
+    height: 3.5em;
+}
+/* 响应式图片 */
+.img-responsive{
+    width:auto;
+    height: 3em;
+}
+/* 介绍/搜索 */
+.header-bottom{
+    width: 100%;
+    height: 5em;
+}
+.header-bottom>div{
+    float: left;
+}
+.header-bottom-left{
+    height: 4.5em;
+    width: 40%;
+    line-height: 1.5em;
+    overflow: hidden;
+    color: #555555;
+    margin-right: 25%;
+}
+.header-bottom-right{
+    height: 3em;
+    width: 35%;
+}
+.header-bottom-right>div{
+    float: left;
+    height: 2.5em;
+}
+.search-input{
+    width: 80%;
+}
+.search-button{
+    width: 20%;
+}
+input,button{
+    outline: none;
+    border: 0;
+}
+input{
+    width: 80%;
+    border: 2px solid #B99585;
+    height: 2.70em;
+    margin-left: 20%;
+}
+button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #B99585;
+    background-color: #B99585;
+    color: white;
+    letter-spacing: 0.5em;
+}
+/* 内容区 */
+.content{
+    width: 100%;
+    height: auto;
+    background-color: #F8F8F8;
+}
+/* 内容展示区 */
+.content-container{
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+.content-container-item1{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.content-container-item1>section{
+    float: left;
+    width: 48%;
+    height: auto;
+    background-color: white;
+    position: relative;
+    margin-bottom: 1em;
+}
+.item1-section-special{
+    margin-right: 4%;
+}
+.item1-section-h3{
+    font-size: 1.1em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+.more-text{
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+}
+.item1-section-ul{
+    width: 100%;
+    height: auto;
+    margin-top: 0.5em;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+.item1-section-ul>li{
+    float: left;
+}
+.item1-section-ul-li-item1{
+    width: 20%;
+    height: auto;
+    margin-left: 2%;
+}
+.item1-section-ul-li-item2{
+    width: 74%;
+    height: auto;
+    margin-left: 2%;
+    padding-bottom: 0.5em;
+}
+.index{
+    width: 100%;
+    height: auto;
+}
+/* 第三块小方块 */
+.index-p-02{
+    padding: 0 1em 0.5em 1em;
+}
+/* 第二大块 */
+.content-container-item2{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+h1.h1-item1{
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+    padding-left: 15px;
+    border-left: 0.8em solid #B99585;
+    margin-bottom: 1em;
+}
+/* 分类 */
+.classification{
+    padding-left: 1em;
+    margin-top: 1em;
+    height: 2em;
+    line-height: 2em;
+    background-color: #E7E7E7;
+}
+.classification a{
+    text-decoration: none;
+    color:#B6B6B6;
+}
+a.active{
+    color: #CBB2AB;
+}
+/* 主体内容 */
+.content-container-item2>section>div{
+    float: left;
+    width: 32%;
+    height: auto;
+    margin-top: 1em;
+    overflow: hidden;
+    position: relative;
+}
+.article-item{
+    margin-right: 2%;
+}
+.article-section{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+/* 小标题 */
+.item2-img{
+    width: 2em;
+    height: 1.5em;
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+}
+.article-title{
+    padding-top: 0.5em;
+    padding-left: 2.5em;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+/* p标签样式 */
+.section-p{
+    padding: 1em 0.5em 1em 0.5em;
+    background-color: #ffffff;
+    font-size: 0.85em;
+}
+.section-p-link{
+    text-decoration: none;
+    color: #555555;
+    margin-right: 0.075em;
+    line-height: 2.0em;
+}
+/* 小商品 */
+.index-p1{
+    padding: 0em 0.5em 0em 0.5em;
+    background-color: #ffffff;
+}
+.index-p1-special{
+    padding-top: 1em;
+    border-top: 2px solid #DBD3D1;
+}
+.index-p1-link{
+    text-decoration: none;
+    color: #555555;
+    margin-right: 0.075em;
+    line-height: 1.5em;
+    font-size: 0.85em;
+}
+/* 办公文教 */
+.article-article{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.article-section-article{
+    float: left;
+    width: 50%;
+    height: auto;
+    background-color: #ffffff;
+    border-top: 2px solid #DBD3D1;
+}
+.index-label-01{
+    font-size: 0.8em;
+    margin-top: 1em;
+    padding-left: 0.5em;
+    margin-bottom: 1em;
+}
+.index-p2{
+    padding: 0em 0.5em 0em 0.5em;
+}
+.index-p2-link{
+    text-decoration: none;
+    color: #555555;
+    margin-right: 0.075em;
+    line-height: 1.5em;
+    font-size: 0.85em;
+}
+/*  */
+.index-p2-special{
+    padding-top: 1em;
+}
+/* 第三快内容 */
+.content-container-item3{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    margin-top: 2em;
+    overflow: hidden;
+}
+.content-container-item3>div{
+    float:left;
+    width: 49%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.content-container-item3-item{
+    margin-right: 1%;
+}
+.content-container-item3-item>section{
+    width: 96%;
+    margin:0 auto;
+    height: auto;
+    position: relative;
+}
+.item3-item1{
+    padding-left: 0.5em;
+}
+.more-text1{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.item3-p{
+    position: relative;
+    line-height: 1.6em;
+    padding-left: 0.5em;
+    margin-top: 0.5em;
+}
+.date1{
+    float:right;
+    position:relative;
+    color: #B6B6B6;
+}
+/* .date{
+    text-align: right;
+    color: #B6B6B6;
+    position: relative;
+    line-height: 1.6em;
+    padding-left: 0.5em;
+    margin-top: 0.5em;
+} */
+.item3-p a{
+    text-decoration: none;
+    color: #B6B6B6;
+}
+
+/*  */
+.content-container-item3-item1{
+    border-left: 1px solid lightgray;
+}
+.content-container-item3-item1>section{
+    width: 96%;
+    margin:0 auto;
+    height: auto;
+    position: relative;
+}
+.item3-article{
+    float: left;
+    width: 50%;
+    height: auto;
+    margin-top: 1em;
+}
+.item3-h4{
+    padding-left: 0.5em;
+}
+.item3-button{
+    width: 90%;
+    height: 2em;
+    border: 1px solid lightgray;
+    outline: none;
+    background-color: #ffffff;
+    color: black;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 2em 5%;
+}
+.item3-button a{
+    color: #CBB2AB;
+    text-decoration: none;
+}
+h1.item3-item1{
+    font-size: 1.1em;
+    padding-left: 0.5em;
+}
+p.item3-h2{
+    font-size: 1.0em;
+    padding-left: 0.5em;
+    font-weight: bold;
+}
+.item1-section-h1{
+    font-size: 1.1em;
+    padding: 0.5em 0.5em;
+}
+.index-h2-01{
+    font-size: 1.0em;
+    font-weight: bold;
+}
+/* 字母分类 */
+a.a-item1{
+    height: 2em;
+    background-color: #E7E7E7;
+    padding: 8px 16px 8px 16px;
+    line-height: 2em;
+    text-decoration: none;
+    color: #CBB2AB;
+}
+a.a-item2{
+    height: 2em;
+    background-color: #E7E7E7;
+    padding: 8px 0em 8px 16px;
+    padding-right: 82%;
+    line-height: 2em;
+    text-decoration: none;
+    color:#B6B6B6;
+}
+.choose{
+    width: 100%;
+    height: 2em;
+    margin-top: 1em;
+    background-color: #ffffff;
+    line-height: 2em;
+    padding-left: 2em;
+    display: none;
+}
+.choose a{
+    text-decoration: none;
+    color: #CBB2AB;
+}
+a.a-item1:hover~.article-item-special{
+    display: none;
+}
+a.a-item1:hover~.choose{
+    display: block;
+}
+
+
+/* 底部 */
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #666666;
+    padding: 1em 0 1em 0;
+}
+.footer-container{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+    color: #FEFEFE;
+}
+.footer-text1{
+    padding-right: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.footer-text2{
+    padding-left: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.footer-copyright{
+    font-size: 0.8em;
+    line-height: 2em;
+    padding-bottom: 0.5em;
+}
+.footer-link{
+    font-size: 0.8em;
+    line-height: 2em;
+    border-top: 1px solid lightgray;
+    padding-top: 0.5em;
+}

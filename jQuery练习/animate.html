@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../文件/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(function () {
+        $(".start").click(function () {
+            var div=$("div");
+            div.animate({width:'400px'},5000);
+            div.animate({fontSize:'25px'},5000);
+        });
+        $(".stop").click(function () {
+            $("div").stop();
+        });
+        $(".stop1").click(function () {
+            $("div").stop(true);
+        });
+        $(".stop2").click(function () {
+            $("div").stop(true,true);
+        });
+    });
+    </script>
+</head>
+<body>
+    <button class="start">开始动画</button>
+    <button class="stop">暂停动画</button>
+    <button class="stop1">暂停所有动画</button>
+    <button class="stop2">暂停动画，但完成动作</button>
+    <p>默认情况下，所有的 HTML 元素有一个静态的位置，且是不可移动的。 如果需要改变为，我们需要将元素的 position 属性设置为 relative, fixed, 或 absolute!</p>
+    <div style="background-color:red;position:absolute;width:100px;height:100px;">hello</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    ul{
+        width: 500px;
+        height: 500px;
+        border: 1px solid #000;
+        box-sizing: border-box;
+    }
+    ul li{
+        list-style: none;
+        width: 100px;
+        /* height: 40px; */
+        line-height: 50px;
+        text-align: center;
+        background-color: rgb(255, 103, 103);
+        margin: 50px 0;
+    }
+    ul li:nth-child(2){
+        transform: rotate(30deg);
+    }
+    ul li:nth-child(3){
+        transform: translate(100px,0);
+    }
+    ul li:nth-child(4){
+        transform: scale(1.5);
+    }
+    /* 综合时，不同变换之间用空格隔开；2D的转换模式会修改元素的坐标系，所以旋转之后再平移就不是水平平移的 */
+    ul li:nth-child(5){
+        transform: rotate(30deg) translate(0,20px);
+    }
+    div{
+        width: 300px;
+        height: 200px;
+        border: 1px solid #000;
+        background-color: rgb(245, 72, 72);
+        overflow: hidden;
+        perspective: 500px;
+    }
+    div img{
+        transform-origin:center bottom;/* 改变中心点,中间用空格隔开*/
+        transition: transform .5s;
+        width: 300px;
+        height: 200px;
+    }
+    div:hover img{
+        transform: rotateX(80deg);
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>正常</li>
+        <li>旋转</li>
+        <li>平移</li>
+        <li>缩放</li>
+        <li>综合</li>
+    </ul>
+    <div>
+        <img src="../4.jpg" alt="">
+    </div>
+</body>
+</html>

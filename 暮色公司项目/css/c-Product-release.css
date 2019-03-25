@@ -1,0 +1,150 @@
+/* 电脑端css样式 */
+/* 去除浏览器自带的边距 */
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+/* 设置页面字体大小以及类型 */
+body{
+    font: normal 100% Helvetica,Arial,sans-serif;
+}
+html{
+    font-size: 16px;
+}
+/* 设置主容器大小 */
+.container{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+}
+/* 顶部区域样式 */
+.header{
+    width: 100%;
+    height: 6em;
+    background-color: white;
+}
+/* logo样式 */
+.header-item{
+    width: 100%;
+    padding-top: 2em;
+    height: 4em;
+}
+/* 响应式图片 */
+.img-responsive{
+    width:auto;
+    height: 3em;
+    margin-top: 0.5em;
+}
+/* 内容区 */
+.content{
+    width: 100%;
+    height: auto;
+    background-color: #F8F8F8;
+}
+/* 底部 */
+.footer{
+    width: 100%;
+    height: 4em;
+    background-color: #666666;
+    padding: 1em 0 1em 0;
+}
+.footer-container{
+    width: 1200px;
+    height: 4em;
+    margin:0 auto;
+    color: #FEFEFE;
+}
+.footer-text1{
+    padding-right: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.footer-text2{
+    padding-left: 30px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.footer-copyright{
+    line-height: 1em;
+    font-size: 0.8em;
+    line-height: 2em;
+}
+/* 内容区编写 */
+.content-container{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+    padding-top: 5.0em;
+}
+.input-text{
+    margin-left: 1.5em;
+    font-size: 1em;
+    color:	#ACACAB;
+    padding-left: 1em;
+}
+input,button{
+    outline: none;
+    border: 0;
+}
+input{
+    width: 30%;
+    border: 1.5px solid	#ACACAB;
+    height: 2.70em;
+}
+/* 添加产品 */
+.content-top{
+    width: 1200px;
+    height: auto;
+    margin:0 auto;
+}
+/* 产品描述 */
+.content-middle{
+    height: auto;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+.content-middle-text{
+    margin:3em 0em 0em 5.4em;
+}
+#describe{
+    color: 	#ACACAB;
+    font-size: 1em;
+    font: normal 100% Helvetica,Arial,sans-serif;
+    width: 70%;
+    height: 16em;
+    border: 1.5px solid	#ACACAB;    
+    padding: 1em 1em;
+}
+/* 提交按钮 */
+.content-bottom{
+    height: 6em;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+button{
+    width: 24%;
+    height: 45%;
+    border: 2px solid #6B473A;
+    background-color: #6B473A;
+    color: white;
+    letter-spacing: 0.5em;
+    /* 四周阴影 */
+    box-shadow: #6B473A 0px 0px 10px;
+}
+.btn{
+    margin: 0 auto;
+    width: 24%;
+    padding: .5em;
+    font-size: 1em;
+}
+h2{
+    font-size: 1.2em;
+}
+.footer-font-weight{
+    font-weight: 700;
+}

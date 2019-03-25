@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js中创建Json对象</title>
+    <script>
+        //要添加window.onload使网页一加载就运行js
+    window.onload=function (){
+        var jsonObject={
+            'name':'Bills','age':18,'address':'四川省','phone':'25151616'
+        };
+        document.getElementById('jName').innerHTML=jsonObject.name;
+        document.getElementById('jAge').innerHTML=jsonObject.age;
+        document.getElementById('jAddress').innerHTML=jsonObject.address;
+        document.getElementById('jPhone').innerHTML=jsonObject.phone;
+
+        // //创建javascript对象数组
+        // var employees=[{"firstName":"BIll","lastName":"Hehe"},{"firstName":"Piter","lastName":"George"},{"firstName":"Thomas","lastName":"Chrome"}];
+        // //访问js对象数组中的第一项：
+        // document.write(employees[0].lastName);
+        // //修改数据
+        // document.write(employees[0].lastName="Jobs");
+    };
+    </script>
+</head>
+<body>
+    <p>name:<span id='jName'></span><br>
+    age:<span id='jAge'></span><br>
+    address:<span id='jAddress'></span><br>
+    phone:<span id='jPhone'></span>
+    </p>
+</body>
+</html>
